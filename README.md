@@ -211,10 +211,8 @@ The script generates a CSV file, `droplet_radii_with_heat_transfer.csv`, with th
 3. **Heat Transfer Calculation**:
    - Surface area is estimated using the radius.
    - Heat transfer is calculated using the formula:
-     \[
-     Q = L \cdot A \cdot \dot{r}
-     \]
-     where \( L \) is the latent heat of condensation, \( A \) is the surface area, and \( \dot{r} \) is the growth rate.
+     surface_area = 4 * np.pi * (droplet_radius_m ** 2)
+     heat_transfer = latent_heat_of_condensation_water * surface_area * growth_rate * 1000  # in J/s
 
 ---
 
