@@ -1,6 +1,6 @@
 # Computer-Vision-Driven-Framework-for-Quantifying-Heat-Transfer-in-Dropwise-Condensation
 
-This repository demonstrates how to train a YOLOv8 model using a custom dataset from Roboflow and then use the trained model to create an annotated tracking video. The script handles bounding box visualization, real-time preview, and video compilation from a sequence of images.
+This repository contains Python scripts for detecting, tracking, and analyzing droplets in a sequence of images using a trained YOLOv8 model. The program calculates the growth rate and heat transfer rate for each droplet, making it suitable for scientific research and thermal analysis. Additionally, it generates a tracking video by processing images from a specified folder, overlaying bounding boxes with class labels and confidence scores, and compiling the annotated frames into a video, providing a visual representation of the droplet detection and tracking process.
 
 ---
 ## **Droplet Detection**
@@ -211,7 +211,6 @@ The script generates a CSV file, `droplet_radii_with_heat_transfer.csv`, with th
 3. **Heat Transfer Calculation**:
    - Surface area is estimated using the radius.
    - Heat transfer is calculated using the formula:
-     surface_area = 4 * np.pi * (droplet_radius_m ** 2)
      heat_transfer = latent_heat_of_condensation_water * surface_area * growth_rate * 1000  # in J/s
 
 ---
