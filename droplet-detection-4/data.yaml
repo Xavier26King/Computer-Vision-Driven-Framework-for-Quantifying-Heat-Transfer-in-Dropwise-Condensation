@@ -1,0 +1,12 @@
+names:
+- dr
+nc: 1
+roboflow:
+  license: CC BY 4.0
+  project: droplet-detection-xsre5
+  url: https://universe.roboflow.com/css-499/droplet-detection-xsre5/dataset/4
+  version: 4
+  workspace: css-499
+test: ../test/images
+train: ../train/images
+val: ../valid/images
